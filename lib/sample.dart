@@ -13,7 +13,7 @@ class Mysample extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Text('Rose'),
+              const Text('Rose'),
               Row(
                 children: [
                   Expanded(
