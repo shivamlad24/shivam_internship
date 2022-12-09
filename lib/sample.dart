@@ -1,13 +1,16 @@
 import 'package:flutter/material.dart';
+import 'package:shivam/statechange.dart';
 
 class Mysample extends StatelessWidget {
+  const Mysample({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Stateless sample',
       home: Scaffold(
         appBar: AppBar(
-          title: Text('Flower'),
+          title: const Text('Flower'),
         ),
         body: Center(
           child: Column(
@@ -18,11 +21,15 @@ class Mysample extends StatelessWidget {
                 children: [
                   Expanded(
                     child: IconButton(
-                      icon: CircleAvatar(
-                        child: Icon(Icons.arrow_back),
+                      icon: const CircleAvatar(
+                        child: Icon(Icons.arrow_forward),
                       ),
                       onPressed: () {
-                        Navigator.pop(context);
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => const Statechange(),
+                            ));
                       },
                     ),
                   )

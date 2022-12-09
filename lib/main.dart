@@ -78,7 +78,7 @@ class _MyHomePageState extends State<MyHomePage> {
       appBar: AppBar(
         // Here we take the value from the MyHomePage object that was created by
         // the App.build method, and use it to set our appbar title.
-        title: Text('Demo'),
+        title: const Text('Demo'),
       ),
       body: Center(
         // Center is a layout widget. It takes a single child and positions it
@@ -86,7 +86,7 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Text(
+            const Text(
               'You have added',
             ),
             Text(
@@ -97,7 +97,7 @@ class _MyHomePageState extends State<MyHomePage> {
               children: [
                 Expanded(
                   child: IconButton(
-                    icon: CircleAvatar(
+                    icon: const CircleAvatar(
                       radius: 15,
                       child: Icon(Icons.arrow_forward),
                     ),
@@ -106,7 +106,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: ((context) => Mysample())));
+                              builder: ((context) => const Mysample())));
                     },
                   ),
                 )
