@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:shivam/statechange.dart';
 
 class Mysample extends StatelessWidget {
   @override
@@ -22,7 +23,11 @@ class Mysample extends StatelessWidget {
                         child: Icon(Icons.arrow_back),
                       ),
                       onPressed: () {
-                        Navigator.pop(context);
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => const Statechange(),
+                            ));
                       },
                     ),
                   )
