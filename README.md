@@ -1,2 +1,2 @@
 # shivam_internship
-Daily work uodate
+Daily work update
