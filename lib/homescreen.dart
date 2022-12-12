@@ -15,7 +15,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
   void _increamentcounter() {
     setState(() {
-      counter++;
+      counter += 2;
     });
   }
 
@@ -23,7 +23,7 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(AppConfig.of(context)?.appTitle ?? "jjjj"),
+        title: Text(AppConfig.of(context)?.appTitle ?? "Sample"),
       ),
       body: Center(
         child: Column(
@@ -31,12 +31,16 @@ class _MyHomePageState extends State<MyHomePage> {
           children: <Widget>[
             Text(
                 "You are running ${AppConfig.of(context)?.buildFlavor ?? "Dev"} flavor"),
-            Text(
+            const Text(
               'You have pushed the button this mainy times:',
             ),
             Text(
               '$counter',
               style: Theme.of(context).textTheme.displayMedium,
+            ),
+            TextButton(
+              onPressed: () => throw Exception(),
+              child: const Text("Throw Test Exception"),
             ),
           ],
         ),
@@ -44,7 +48,7 @@ class _MyHomePageState extends State<MyHomePage> {
       floatingActionButton: FloatingActionButton(
         onPressed: _increamentcounter,
         tooltip: 'Increment',
-        child: Icon(Icons.add),
+        child: const Icon(Icons.add),
       ),
     );
   }
