@@ -30,7 +30,7 @@ class _MyHomePageState extends State<MyHomePage> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Text(
-                "You are running ${AppConfig.of(context)?.buildFlavor} flavor"),
+                "You are running ${AppConfig.of(context)?.buildFlavor ?? "Dev"} flavor"),
             Text(
               'You have pushed the button this mainy times:',
             ),
