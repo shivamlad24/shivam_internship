@@ -32,7 +32,6 @@ class _StatechangeState extends State<Statechange> with WidgetsBindingObserver {
         print('resumed');
       });
     } else {
-      // ignore: avoid_print
       print(state.toString());
     }
   }
