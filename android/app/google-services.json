@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "62628895090",
+    "project_id": "sample-96dd0",
+    "storage_bucket": "sample-96dd0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:62628895090:android:14505a6621e20540fa65eb",
+        "android_client_info": {
+          "package_name": "com.example.shivam"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "62628895090-o0gc2lilhg0kduprnec036qmasd4m9ft.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.shivam",
+            "certificate_hash": "d5b6d8cf18c609404ccd29bb30ce8cc1030399ff"
+          }
+        },
+        {
+          "client_id": "62628895090-2420suus1b61dj4lrbv8or7rdfpdvcsk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCd1zQZCJtXrcPbUYlE9-gQ9OOL1p_TRA0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "62628895090-2420suus1b61dj4lrbv8or7rdfpdvcsk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
